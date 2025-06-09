@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Qsecics</title>
+    <meta
+      name="description"
+      content="Qsecics is launching soon. Stay tuned for our brand new website!"
+    />
+    <meta
+      name="keywords"
+      content="Qsecics, coming soon, new website, technology"
+    />
+    <meta name="author" content="Qsecics" />
+    <meta
+      name="google-site-verification"
+      content="3_mUnnnIfGCfsVVyQvcwSyAXcT8xybo2H1wr9Fospdc"
+    />
+
+    <style>
+      /* Reset and base */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(-45deg, #1e1e2f, #27293d, #1e1e2f, #27293d);
+        background-size: 400% 400%;
+        animation: gradientBackground 15s ease infinite;
+        color: #f0f0f0;
+      }
+
+      @keyframes gradientBackground {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 40px;
+        background: rgba(20, 20, 30, 0.7);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid #333;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+      }
+
+      .logo {
+        font-weight: 700;
+        font-size: 2.5rem;
+        letter-spacing: 0.1em;
+        /*color: #00C4FF;*/
+        color: #00809d;
+        text-shadow: 0 0 12px rgba(0, 196, 255, 0.8);
+      }
+
+      main.container {
+        flex-grow: 1;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 6rem 1rem 2rem;
+        position: relative;
+        background: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&q=80")
+          no-repeat center center;
+        background-size: cover;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); /* dark overlay for readability */
+      }
+
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1.5s ease forwards;
+      }
+
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h3 {
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #ffffff;
+        line-height: 1.4;
+        text-shadow: 0 0 12px rgba(0, 0, 0, 0.6),
+          0 0 8px rgba(255, 255, 255, 0.3);
+        animation-delay: 0.5s;
+        font-style:oblique;
+      }
+
+      p {
+        font-size: 1.4rem;
+        font-weight: 400;
+        max-width: 600px;
+        line-height: 1.8;
+        color: #e0e0e0;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+        animation-delay: 1s;
+        font-style: italic;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background: rgba(20, 20, 30, 0.7);
+        backdrop-filter: blur(10px);
+        font-size: 0.9rem;
+        color: #cccccc;
+        border-top: 1px solid #333;
+        box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.4);
+      }
+
+      @media (max-width: 600px) {
+        header {
+          padding: 0 20px;
+        }
+        .logo {
+          font-size: 2rem;
+        }
+        main.container {
+          margin-top: 80px;
+          padding-top: 4rem;
+        }
+        h3 {
+          font-size: 2.8rem;
+        }
+        p {
+          font-size: 1.2rem;
+          max-width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">QSECICS</div>
+    </header>
+
+    <main class="container">
+      <h3 class="fade-in">We Are Coming Soon!</h3>
+      <p class="fade-in">
+        Currently, we are working on our brand new website and will be launching
+        soon.
+      </p>
+    </main>
+
+    <footer>&copy; 2025 Qsecics. All rights reserved.</footer>
+  </body>
+</html>
